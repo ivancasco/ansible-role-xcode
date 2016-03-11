@@ -4,6 +4,7 @@ galaxy_info:
   description: Ansible role for installing and configuring Xcode. 
   license: Apache 2.0
   min_ansible_version: 1.9
+  platforms:
   - name: GenericUNIX
     versions:
     - all
