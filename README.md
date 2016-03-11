@@ -1,37 +1,34 @@
-Role Name
-=========
+# Ansible Role: Xcode
+
+[![Build Status](https://travis-ci.org/ivancasco/ansible-role-xcode.svg?branch=master)](https://travis-ci.org/ivancasco/ansible-role-xcode)
+
+## Role Name
 
 Ansible role for installing and configuring Xcode.
 
-Requirements
-------------
+## Requirements
 
 This role assumes that password-less sudo access is already set up.
 
-Role Variables
---------------
+## Role Variables
 
 None.
 
-Dependencies
-------------
+## Dependencies
 
 None.
 
-Example Playbook
-----------------
+## Example Playbook
 
     - hosts: servers
       roles:
          - { role: ivancasco.xcode }
 
-License
--------
+## License
 
 Apache 2.0
 
-Author Information
-------------------
+## Author Information
 
 This role was created by [Ivan Casco](http://www.ivancasco.com/) (@ivicv)
 
