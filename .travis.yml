@@ -1,6 +1,14 @@
 ---
 sudo: required
 
+matrix:
+  allow_failures:
+    - os: osx
+
+os: 
+  - linux
+  - osx
+
 env:
   - distribution: ubuntu
     version: 14.04
