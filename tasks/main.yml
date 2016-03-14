@@ -1,2 +1,6 @@
 ---
 # tasks file for xcode
+
+- include: install.yml
+
+- include: configure.yml
