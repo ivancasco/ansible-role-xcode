@@ -26,7 +26,7 @@ before_install:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo docker build --rm=true --file=tests/Dockerfile.${distribution}-${version} --tag=${distribution}-${version}:ansible tests; fi
 
 script:
-  - container_id=$(mktemp)
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then container_id=$(mktemp); fi
   # Run container in detached state
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo docker run --detach --volume="${PWD}":/etc/ansible/roles/role_under_test:ro ${run_opts} ${distribution}-${version}:ansible "${init}" > "${container_id}"; fi
 
