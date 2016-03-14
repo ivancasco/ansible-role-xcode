@@ -14,7 +14,8 @@ This role also requires homebrew already installed.
 
 ## Role Variables
 
-None.
+ - macappstore_user: "Your appleid appstore user"
+ - macappstore_passowrd: "Your appleid appstore password"
 
 ## Dependencies
 
