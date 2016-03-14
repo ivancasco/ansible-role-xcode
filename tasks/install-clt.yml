@@ -1,6 +1,7 @@
 ---
 - name: Enable apps to control the computer
-  shell: sudo sqlite3  "/library/application support/com.apple.tcc/tcc.db" 'INSERT INTO "access" VALUES("kTCCServiceAccessibility","/usr/libexec/sshd-keygen-wrapper",1,1,1,NULL,NULL);'
+  shell: sqlite3  "/library/application support/com.apple.tcc/tcc.db" 'INSERT INTO "access" VALUES("kTCCServiceAccessibility","/usr/libexec/sshd-keygen-wrapper",1,1,1,NULL,NULL);'
+  become: yes
   ignore_errors: yes
 
 - name: Copy install_xcode.sh script
