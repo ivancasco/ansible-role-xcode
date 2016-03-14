@@ -10,6 +10,8 @@ Ansible role for installing and configuring Xcode.
 
 This role assumes that password-less sudo access is already set up.
 
+This role also requires homebrew already installed.
+
 ## Role Variables
 
 None.
