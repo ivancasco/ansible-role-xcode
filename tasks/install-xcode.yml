@@ -6,7 +6,7 @@
   shell: "/usr/local/bin/mas signout"
 
 - name: Sign in into Mac AppStore
-  shell: "/usr/local/bin/mas signin {{ macappstore_user }} {{ macappstore_password }}"
+  shell: "/usr/local/bin/mas signin {{ macappstore_user | quote }} {{ macappstore_password | quote }}"
 
 - name: Install Xcode from AppStore
   shell: "/usr/local/bin/mas install 497799835"
